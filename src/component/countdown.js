@@ -63,13 +63,20 @@ class countdown extends Component {
 
 
     return (
+      <div>
+        <Typography variant="body2" component="p" className={'count'} style={{ display: this.state.secs > -1 ? "block" : "none" }} >
+          නැකතට තව,
+            </Typography>
+        <Typography variant="body2" component="p" className={'count'} style={{ display: this.state.secs > -1 ? "none" : "block" }} >
+          මෙම නැකත උදා වී අවසන්...
+            </Typography>
+        <div   >
+          <Typography className={'cardh'} style={{ display: this.state.secs >= -1 ? "block" : "none" }} >
+            දින {this.addZeros(this.state.days)} පැය {this.addZeros(this.state.hours)} විනාඩි {this.addZeros(this.state.mins)} තත්.{this.addZeros(this.state.secs)}
 
-      <div id style={{ display: this.state.secs > 0 ? "block" : "none" }}  >
-        <Typography className={'cardh'} >
-          පැය {this.addZeros(this.state.hours)} විනාඩි {this.addZeros(this.state.mins)} තත්.{this.addZeros(this.state.secs)}
+          </Typography>
 
-        </Typography>
-
+        </div>
       </div>
 
     );

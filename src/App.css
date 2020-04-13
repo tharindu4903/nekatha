@@ -46,7 +46,7 @@ p {
 
 .abc {
     background-color: rgb(243, 239, 233);
-    height: 850px;
+    height: auto;
 }
 
 .appbar {
