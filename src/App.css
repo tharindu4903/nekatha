@@ -1,47 +1,54 @@
-body{
-  background-color: rgb(255, 255, 255);
+body {
+    background-color: rgb(255, 255, 255);
 }
-h2{
-  position: relative;
-  top: -15px;
-  text-align: center;
-  
-  
-}
-p{
-  text-align: center;
-}
-.head{
-  color: rgb(39, 221, 173);
-  text-align: center;
-  height: 50px;
-}
-.card1{
-  position: relative;
-text-align: center;
-  margin: 7px;
-  background-color: aqua;
-}
-.cardh{
-  color: blue;
-  height: 10px;
-}
-.count{
-color: rgb(40, 198, 45);
-font-size: 14px;
 
+h2 {
+    position: relative;
+    top: -15px;
+    text-align: center;
 }
-.cbody{
-  margin: 15px;
+
+
+p {
+    text-align: center;
 }
-.bk{
-  background-color: cornsilk;
+
+.head {
+    color: rgb(39, 221, 173);
+    text-align: center;
+    height: auto;
 }
-.abc{
-  background-color: rgb(243, 239, 233);
-  height:850px;
+
+.card1 {
+    position: relative;
+    text-align: center;
+    margin: 7px;
+    background-color: aqua;
 }
-.appbar{
-  
-  height: 55px;
+
+.cardh {
+    color: blue;
+   
+}
+
+.count {
+    color: rgb(40, 198, 45);
+    font-size: 14px;
+}
+
+.cbody {
+    margin: 15px;
+}
+
+.bk {
+    background-color: cornsilk;
+}
+
+.abc {
+    background-color: rgb(243, 239, 233);
+    height: 850px;
+}
+
+.appbar {
+    height: 55px;
 }

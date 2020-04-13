@@ -12,7 +12,8 @@ class countdown extends Component {
     days: 0,
     hours: 0,
     mins: 0,
-    secs: 0
+    secs: 0,
+
 
   };
 
@@ -42,6 +43,7 @@ class countdown extends Component {
       mins,
       secs
     });
+
   };
   componentDidMount() {
     this.setCountdown();
@@ -52,18 +54,18 @@ class countdown extends Component {
   }
   componentWillUnmount() {
     clearInterval(this.interval);
+
+
   }
- 
+
 
   render() {
-    if (this.state.secs<0) {
-      document.getElementById('my').style.display = "none"; 
-    }
-    return (
-      <div >
-          
 
-        <Typography class={'cardh'} id ="my" >
+
+    return (
+
+      <div id style={{ display: this.state.secs > 0 ? "block" : "none" }}  >
+        <Typography className={'cardh'} >
           පැය {this.addZeros(this.state.hours)} විනාඩි {this.addZeros(this.state.mins)} තත්.{this.addZeros(this.state.secs)}
 
         </Typography>
@@ -73,6 +75,7 @@ class countdown extends Component {
     );
 
   }
+
 }
 
 
